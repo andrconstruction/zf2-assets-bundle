@@ -764,6 +764,11 @@ class ServiceOptions extends \Zend\Stdlib\AbstractOptions
             }
         }
 
+        /**
+        * Workaround 
+        */
+         return file_exists( $sFilePath ) ;
+        
         if (!$this->openBaseDirPaths) {
             return file_exists($sFilePath);
         }
